@@ -1,0 +1,23 @@
+{
+  "name": "Hello kDrive",
+  "guid": "asc.b1f2e3a4-1111-2222-3333-444455556666",
+  "baseUrl": "",
+  "variations": [
+    {
+      "description": "Insère un texte de test",
+      "url": "index.html",
+      "icons": ["resources/light/icon.png", "resources/light/icon@2x.png"],
+      "isViewer": false,
+      "EditorsSupport": ["word", "cell", "slide"],
+      "isVisual": true,
+      "isModal": false,
+      "isInsideMode": false,
+      "initDataType": "none",
+      "initData": "",
+      "isUpdateOften": false,
+      "buttons": [],
+      "size": [320, 140],
+      "events": []
+    }
+  ]
+}

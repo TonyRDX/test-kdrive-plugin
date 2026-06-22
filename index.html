@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins.js"></script>
+  <style>
+    body { font-family: sans-serif; padding: 16px; }
+    button { padding: 8px 14px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <p>Plugin de test chargé ✅</p>
+  <button id="btn">Insérer "Hello"</button>
+  <script>
+    window.Asc.plugin.init = function () {
+      document.getElementById("btn").onclick = function () {
+        window.Asc.plugin.executeMethod("PasteText", ["Hello depuis mon plugin kDrive 👋"]);
+      };
+    };
+    window.Asc.plugin.button = function () {
+      this.executeCommand("close", "");
+    };
+  </script>
+</body>
+</html>
